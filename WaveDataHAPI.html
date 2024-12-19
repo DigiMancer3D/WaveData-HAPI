@@ -1,0 +1,588 @@
+<!DOCTYPE HTML>
+ <html manifest="smartpixel.appcache">
+<head>
+ <title>Wave Data H-API
+ </title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta property="og:url" content="Wave Data H-API System">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-wavedatahapi" content="black-translucent">
+ <meta name="mobile-web-app-hapi" content="black-translucent">
+ <meta name="web-app-sPixel" content="black-translucent">
+ <meta name="web-sPixel" content="black-translucent">
+ <meta property="og:url" content="index,follow">
+ <meta name="application-name" content="Read the Wave  ...  API">
+ <meta name="author" content="3Douglas 3D Pihl">
+ <meta name="description" content="Read & Write H-API">
+ <meta name="spellcheck" content="no">
+ <meta name="title" content="Wave Data H-API">
+ <meta name="keywords" content="wave data hashed api h-api hashed-api export import data hashes hash">
+ <link rel="icon" href="">
+ </head>
+ <style>
+ html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+ }
+ 
+ .head0 {
+ -webkit-animation: return 1.69s 1 ease-out;
+         animation: return 1.69s 1 ease-out;
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+ transform-style: preserve-3d;
+  background-repeat: no-repeat;
+  transition-duration: 1.85s;
+ }
+ 
+ .head0 {
+  -webkit-animation: shimmer 3.69s infinite ease-in-out;
+          animation: shimmer 3.69s infinite ease-in-out;
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+ transform-style: preserve-3d;
+  background-repeat: no-repeat;
+  transition-duration: 2.22s;
+ }
+ 
+ .head1 {
+ font-size: 60px;
+ width:100%;
+ }
+ 
+ .head1:overflow {
+ font-size:auto;
+ max-width:100%;
+ }
+ 
+ .head1 > span {
+ font-size: auto;
+  -webkit-animation: wavetxt 3.69s infinite linear ;
+          animation: wavetxt 3.69s infinite linear ;
+ transform-style: preserve-3d;
+ }
+ 
+ 
+ .head1 > span:nth-child(2) {
+ animation-delay: 0.1s;
+ }
+ 
+ .head1 > span:nth-child(3) {
+ animation-delay: 0.2s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(4) {
+ animation-delay: 0.3s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(5) {
+ animation-delay: 0.4s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(6) {
+ animation-delay: 0.5s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(7) {
+ animation-delay: 0.6s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(8) {
+ animation-delay: 0.7s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(9) {
+ animation-delay: 0.8s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(10) {
+ animation-delay: 0.9s;
+ }
+ 
+ 
+ 
+ .head1 > span:nth-child(11) {
+ animation-delay: 1.0s;
+ }
+ 
+ 
+ .hider1 {
+ display:inline-block;
+ animation: fader 60s infinite ease-in-out;
+ align: center;
+ position: sticky;
+ top:0;
+ text-align:center;
+ font-size: auto;
+ margin-left: 36vw;
+ margin-right:auto;
+ margin-top:0.1vw;
+ margin-bottom:0.1vw;
+ max-width:100%;
+ min-width:30%;
+ z-index: 3;
+ }
+ 
+ 
+ 
+ @-webkit-keyframes shimmer {
+ 0%{
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+  background-repeat: no-repeat;
+ }
+ 96%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ 
+ }
+ }
+ 
+ @keyframes shimmer {
+ 0%{
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+  background-repeat: no-repeat;
+ }
+ 96%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ 
+ }
+ }
+ 
+ 
+ @-webkit-keyframes shimmer2 {
+ 100%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ 
+ }
+ }
+ 
+ @keyframes shimmer2 {
+ 100%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ 
+ }
+ }
+ 
+ 
+@-webkit-keyframes wavetxt {
+  0% {
+  opacity: 0;
+  text-shadow: 0px 0px 1px rgb(0,0,0,0.3);
+  }
+ 36%{
+ opacity: 1;
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+		  }
+  50% {
+  text-shadow: 0px 2.6px 6px rgb(0,0,0,0.59);
+  }
+ 66%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ opacity: 1;
+ }
+  100%{ 
+  opacity: 0.1;
+  text-shadow: 0px 0.6px 2px rgb(0,0,0,0.36);
+  }
+ }
+ 
+  @keyframes wavetxt {
+  0% {
+  opacity: 0;
+  text-shadow: 0px 0px 1px rgb(0,0,0,0.3);
+  }
+ 36%{
+ opacity: 1;
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+          mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+		  }
+  50% {
+  text-shadow: 0px 2.6px 6px rgb(0,0,0,0.59);
+  }
+ 66%{
+ -webkit-mask-position:left;
+ mask-position:left;
+ opacity: 1;
+ }
+  100%{ 
+  opacity: 0.1;
+  text-shadow: 0px 0.6px 2px rgb(0,0,0,0.36);
+  }
+ }
+ 
+ .antiwave {
+ margin-top:-4%;
+ margin-bottom:-4%;
+ transform-style: preserve-3d;
+ z-index: 0;
+  <!-- animation:antiwavetxt 3.69s infinite linear; -->
+ }
+ 
+ .antiwave2 {
+ font-size: 20px;
+ z-index:99;
+ padding-left: 5%;
+ padding-right: 5%;
+  <!--margin-top:90px;
+ <!--margin-bottom:-4%;-->
+<!-- animation:antiwavetxt2 3.69s infinite linear; -->
+ 
+ }
+ 
+@-webkit-keyframes antiwavetxt {
+  0% {
+   transform: translate(0px, -16px);
+ transform-style: preserve-3d;
+ font-size: 105%;
+ }
+  50% {
+   transform: translate(0px, -24px);
+ transform-style: preserve-3d;
+ font-size: 130%;
+ }
+ 66% {
+   transform: translate(0px, -27px);
+ transform-style: preserve-3d;
+ font-size: 166%;
+ }
+  100%{
+   transform: translate(0px, -17px);
+ transform-style: preserve-3d;
+ font-size: 133%;
+  }
+ }
+ 
+  @keyframes antiwavetxt {
+  0% {
+   transform: translate(0px, -16px);
+ transform-style: preserve-3d;
+ font-size: 105%;
+ }
+  50% {
+   transform: translate(0px, -24px);
+ transform-style: preserve-3d;
+ font-size: 130%;
+ }
+ 66% {
+   transform: translate(0px, -27px);
+ transform-style: preserve-3d;
+ font-size: 166%;
+ }
+  100%{
+   transform: translate(0px, -17px);
+ transform-style: preserve-3d;
+ font-size: 133%;
+  }
+ }
+ 
+ 
+@-webkit-keyframes antiwavetxt2 {
+  0% {
+   transform: translate(0px, -18px);
+ transform-style: preserve-3d;
+ }
+  50% {
+   transform: translate(0px, -24.1px);
+ transform-style: preserve-3d;
+ }
+  100%{
+   transform: translate(0px, -20.1px);
+ transform-style: preserve-3d;
+  }
+ }
+ 
+  @keyframes antiwavetxt2 {
+  0% {
+   transform: translate(0px, -18px);
+ transform-style: preserve-3d;
+ }
+  50% {
+   transform: translate(0px, -24.1px);
+ transform-style: preserve-3d;
+ }
+  100%{
+   transform: translate(0px, -20.1px);
+ transform-style: preserve-3d;
+  }
+ }
+ 
+ 
+ 
+ @keyframes return {
+ 0% {
+ filter: blur(3px);
+ transform-style: preserve-3d;
+  opacity: 0;
+  }
+ 87% {
+  transform: translate(0%,0%) scale(100%);
+ filter: blur(0px);
+ transform-style: preserve-3d;
+  opacity: 1;
+  }
+  }
+ 
+ 
+ @-webkit-keyframes return {
+ 0% {
+ filter: blur(3px);
+ transform-style: preserve-3d;
+  opacity: 0;
+  }
+ 87% {
+  transform: translate(0%,0%) scale(100%);
+ filter: blur(0px);
+ transform-style: preserve-3d;
+  opacity: 1;
+  }
+  }
+ 
+ 
+ 
+@-webkit-keyframes fader {
+  0% {
+   opacity: 1;
+ }
+  33% {
+   opacity: 0;
+ }
+  93% {
+   opacity: 0;
+ }
+  98%{
+   opacity: 1;
+  }
+ }
+ 
+  @keyframes fader {
+  0% {
+   opacity: 1;
+ }
+  33% {
+   opacity: 0;
+ }
+  93% {
+   opacity: 0;
+ }
+  98%{
+   opacity: 1;
+  }
+ }
+ 
+ 
+ .disptxt {
+ align:center;
+ position: center;
+ text-align:center;
+ padding:0.25vw;
+ font-size: 30px;
+ text-shadow: 0px 1.4px 3.69px rgb(92, 92, 92, 0.89);
+ transition: 0.96s;
+ transition-timing-function: ease-out;
+animation-delay: 1.36s;
+ }
+ 
+ .displaytxt {
+ filter: blur(2px);
+ transition: 0.96s;
+ transition-timing-function: ease-out;
+animation-delay: 1.36s;
+ }
+ 
+ .displaytxt2 {
+ filter: blur(2px);
+ animation:none;
+ }
+ 
+ .displaytxt:hover {
+ padding:-3vw;
+ font-size: 40px;
+ transition: 0.96s;
+ transition-timing-function: ease-in-out;
+ text-shadow: 0px 0.4px 16.9px rgb(92, 92, 92, 0.49);
+ filter: blur(0px);
+animation-delay: 1.36s;
+ }
+ 
+ .info1 {
+ margin-left:2.5%;
+ margin-right:2.5%;
+ background-color: rgb(150,150,150,0.69);
+ text-shadow: 0px 0.81px 6.33px rgb(255,255,255,0.67);
+ border-radius: 15px;
+ border: 1.9px solid rgb(255,255,255,0.77);
+ box-shadow: 0px 0px 13px rgb(0,0,0,0.4);
+transition: 2.96s;
+animation-delay: 1.36s;
+ }
+ 
+ .info1:hover {
+ background-color: rgb(150,150,150,0.39);
+ text-shadow: 0px 0.81px 6.33px rgb(255,255,255,0.57);
+         animation: shimmer2 9.63s infinite ease-in-out;
+ -webkit-animation: shimmer2 9.63s infinite ease-in-out;
+ -webkit-mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+         mask:linear-gradient(-60deg,#000 30%,#0004,#000 70%) right/331% 100%;
+  background-repeat: no-repeat;
+ border-radius: 33px;
+ text-shadow: 0px 0.9px 9.63px rgb(255,255,255,0.87);
+ box-shadow: 0px 0.9px 7px rgb(0,0,0,0.85) inset;
+transition: 2.96s;
+animation-delay: 1.36s;
+ }
+ 
+ .info2 {
+ width:80%;
+ right:0;
+ margin-right:5%;
+ float:right;
+ position:relative;
+ text-align:right;
+ text-shadow:0px 0.81px 6.33px rgb(255,255,255,0.67);
+ }
+ 
+ .info3 {
+ width:35%;
+ left:0;
+ margin-left:-1.5%;
+ }
+ 
+ .bingo {
+ min-width:59%;
+ max-width:98%;
+ align:center;
+ position:center;
+ text-align:center;
+ font-size:18px;
+ word-break:break-word;
+ text-shadow: 0px 0.1px 3px rgb(0,0,0,0);
+ }
+ 
+ .bingo:hover {
+ padding-bottom:1.5vw;
+ margin-bottom:-2vw;
+ margin-top:-0.5vw;
+ padding-top:1.5vw;
+ text-shadow: 0px 3.99px 19px rgb(0,0,0,0.78);
+ }
+ 
+ </style>
+ <body id='body'>
+ 
+<script>
+ // START CLOCK SCRIPT
+ Number.prototype.pad = function(n) {
+  for (var r = this.toString(); r.length < n; r = 0 + r);
+  return r;
+ };
+
+ function updateClock() {
+  var now = new Date();
+  var min = now.getMinutes(),
+   hou = now.getHours(),
+   mo = now.getMonth(),
+   dy = now.getDate(),
+   yr = now.getFullYear();
+  var months = ["J4NU4REE", "PH38RU4REE", "M4RCH", "4PR!1", "M4Y", "JUN3", "JU1Y", "4U9U57", "53P73M83R", "0C7083R", "N0V3M83R", "D3C3M83R"];
+  var tags = ["mon", "d", "y", "h", "m"],
+   corr = [months[mo], dy, yr, hou.pad(2), min.pad(2)];
+   var meridian = '', hhr = '';
+   if(hou >= 12){
+      meridian = "<sup><sup><sub><sub><a style='color:D4AF37'>P</a>re-<a style='color:D4AF37'>M</a>eridian</sub></sub></sup></sup>";
+	 if(hou > 12){
+      hhr = hou.pad(2) - 12;
+    }	 
+   }  
+   else {
+      meridian = "<sup><sub><sub><sub><a style='color:D4AF37'>A</a>fter-<a style='color:D4AF37'>M</a>eridian</sub></sub></sub></sup>";
+	  if(hou.pad(2) === "00"){
+	  hhr = 12;
+	  }
+	  if(hou.pad(2) === 0){
+	  hhr = 12;
+	  }
+	  var hnu = "0" + hou.pad(2)[1];
+	  if(hou.pad(2) === hnu){
+	  hhr = hou.pad(2)[1];
+	  }
+	  else {
+	  hhr = hou.pad(2);
+   } 
+   }
+   
+
+
+//document.getElementById('timedate').innerHTML = "<a style='color:D4AF37'>" + months[mo] + "</a> " + "<a style='color:D4AF37'>" + dy + "</a>, " + "<a style='color:D4AF37'>" + yr + "</a> &nbsp; @ " + "<a style='color:D4AF37'>" + hhr + "</a>:" + "<a style='color:D4AF37'>" + min.pad(2) + "</a> " + meridian;
+   
+//document.getElementById('timedate2').innerHTML = "<a style='color:D4AF37'>" + hhr + "</a>:" + "<a style='color:D4AF37'>" + min.pad(2) + "</a> " + meridian;
+
+//document.getElementById('timedate3').innerHTML = "<a style='color:D4AF37'>" + months[mo] + "</a> " + "<a style='color:D4AF37'>" + dy + "</a>, " + "<a style='color:D4AF37'>" + yr + "</a> &nbsp; @ " + "<a style='color:D4AF37'>" + hhr + "</a>:" + "<a style='color:D4AF37'>" + min.pad(2) + "</a> " + meridian;
+
+   document.getElementById('nyear').innerHTML = yr;
+   document.getElementById('nyear2').innerHTML = yr;
+
+document.getElementById('hidden1').innerHTML = "<a style='color:D4AF37'>" + months[mo] + "</a> " + "<a style='color:D4AF37'>" + dy + "</a>, " + "<a style='color:D4AF37'>" + yr + "</a> &nbsp; @ " + "<a style='color:D4AF37'>" + hhr + "</a>:" + "<a style='color:D4AF37'>" + min.pad(2) + "</a> " + meridian;
+}
+
+ function initClock() {
+  updateClock();
+  window.setInterval("updateClock()", 1);
+ }
+ // END CLOCK SCRIPT
+</script>
+<sub class='hider1'><sup><div id='hidden1' style='align:center;position:center;text-align:center;'></div></sup></sub>
+<div class='antiwave'>
+ <p id='headtxt1' style='align:center;position:center;text-align:center;text-shadow:0px 0px 29px rgb(255,255,255,0.81);' class='head1'><span>&nbsp;</span><span>W</span><span>a</span><span>v</span><span>e</span><span>&nbsp;</span><span>D</span><span>a</span><span>t</span><span>a</span><span>&nbsp;</span></p></br>
+ </div>
+ <div class='antiwave2'>
+ <p>&nbsp; &nbsp; &nbsp; &nbsp; Wave Data is a type of Hashed-API structure for generic exporting and importing of digital objects over the internet. Export almost any webobject with as little data as possible but in a manner that can create non-static hash stored web applications. Wave Data is a dynamic API structure so any item in digital code can be exportable, purchasable, modular & of course importable. Hashed-API is capable of telling the importer what any piece of the API string is. The API can also tell the importer nothing or anywhere in between. Wave Data is one of the first Flexable, auto-expandable, informative, blindable, bindable & modular hash-based API structures. A New API structure for the decentralized world.
+ </p>
+ <div class='disptxt'  style='max-width:100vw;min-width:60vw;font-size:110%;'>
+ <b><span></span><span title='start of string' class='displaytxt'><i onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="|&nbsp;[metadata]&nbsp;";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="#lM37aD47al";' ontouchstart='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="|&nbsp;[metadata]&nbsp;";' ontouchend='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="#lM37aD47al";'>#lM37aD47al</i></span><span class='displaytxt2'>jl0</span><i title='...length is based on need...' class='displaytxt'  onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[data]&nbsp;";' ontouchstart='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="1D4742";' ontouchend='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[data]&nbsp;";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="1D4742";'>1D4742</i><span class='displaytxt2'>q10</span><i title='metadata is optional' class='displaytxt' onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[metadata]&nbsp;";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="2M374Da7A2";' ontouchstart='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[metadata]&nbsp;";' ontouchend='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="2M374Da7A2";'>2M374Da7A2</i><span class='displaytxt2'>jl0</span><i title='data can also be lists or additional H-APIs' class='displaytxt' onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[data]&nbsp;";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="2D4tA3";' ontouchstart='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;[data]&nbsp;";' ontouchend='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="2D4tA3";'>2D4tA3</i><span class='displaytxt2'>q10</span><i title='end of string' class='displaytxt' onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;end&nbsp;|";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="3nD2";' ontouchstart='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;end&nbsp;|";' ontouchend='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="3nD2";'>3nD2</i><span></span></b>      
+ </div>
+ <p></br><h1 style='font-size:3.5vw;align:center;text-align:center;position:center;'><b>Decentralizing the <i>API</i> is in the <i>MARKERS</i>!</b></h1>
+ </br>&nbsp; &nbsp; &nbsp; &nbsp; Wave Data has rigid markers with a fluid design allowing almost anything to be used as a marker for hash mimicing data & to customize your API to give greater functionality without having to include more data points.</br>&nbsp; &nbsp; &nbsp; &nbsp; The marker setup is like a consensus, there's a set of rules and how you follow through beyond that is up to you as long as the rules are met. There are some already established versions of some of the markers. Which pre-established version of marker sets you use may be by choice or to divide APIs for different known objects that need different reconstruction scripting.</br></br>&nbsp; &nbsp; &nbsp; &nbsp; <b style='font-size:109%;'><sub>The pre-established marker versions are as follows:</sub></b> <ul class='info1'><span class='info3'><b>v1</b>:: <ul><b>starter/closer</b>:&nbsp;|</ul><ul><b>filler</b>:&nbsp;..</ul><ul><b>end</b>:&nbsp;,</ul></span><span class='info2' title='   example   '>|[metadata],..[data]..,[metadata],..[...]..,end|</span></br></ul><ul class='info1'><span class='info3'><b>v2</b>:: <ul><b>starter/closer</b>:&nbsp;| & =</ul><ul><b>filler</b>:&nbsp;,,</ul><ul><b>end</b>;</ul></span><span class='info2' title='   example   '>|[metadata];,,[data],,;[metadata];,,[...],,;end=</span></br></ul><ul class='info1'><span class='info3'><b>v3</b>:: <ul><b>starter/closer</b>:&nbsp;| & ==</ul><ul><b>filler</b>:&nbsp;., & ,.</ul><ul><b>end</b>:&nbsp;{ & }</ul></span><span class='info2' title='   example   '>|[metadata]},.[data].,{[metadata]},.[...].,{end==</span></br></ul><ul class='info1'><span class='info3'><b>v4</b>:: <ul><b>starter/closer</b>:&nbsp;[ & ]</ul><ul><b>filler</b>:&nbsp;_| & |_</ul><ul><b>end</b>\ & /</ul></span><span class='info2' title='   example   '>[[metadata]\|_[data]_|/[metadata]\|_[...]_|/end]</span></br></ul><ul class='info1'><span class='info3'><b>v5</b>:: <ul><b>starter/closer</b>:&nbsp;[ & ]</ul><ul><b>filler</b>:&nbsp;-\ & /-</ul><ul><b>end</b>:&nbsp;| & |</ul></span><span class='info2' title='   example   '>[[metadata]|\-[data]-/|[metadata]|\-[...]-/|end]</span></br></ul><ul class='info1'><span class='info3'><b>v6</b>::<ul><b>starter/closer</b>:&nbsp;( & )</ul><ul><b>filler</b>:&nbsp;-_</ul><ul><b>end</b>:&nbsp;|</ul></span><span class='info2' title='   example   '>([metadata]|-_[data]_-|[metadata]|-_[...]_-|end)</span></br></ul><ul class='info1'><span class='info3'><b>Blinded</b>:: <ul><b>Bv1</b>:&nbsp;Blank Metadata</ul><ul><b>Bv2</b>:&nbsp;No Marker-end(s)</ul><ul><b>Bv3</b>:&nbsp;Blank Metadata & No Marker-end(s)</ul><ul><b>Bv4</b>:&nbsp;No Filler Markers</ul></span></br></ul></br></br>&nbsp; &nbsp; &nbsp; &nbsp; <b style='font-size:109%;'><sup>The Marker Rules are as follows:</sup></b><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>1)</b> The start tag can only be repeated if it is also the last character in the string</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>2<sup><sub>a</sub></sup>)</b> The markers between metadata & data consist of 2 markers, <i>filler marker(s)</i> & <i>marker-end</i></ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>2<sup><sub>b</sub></sup>)</b> Metadata is surrounded between marker-end(s)</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>2<sup><sub>c</sub></sup>)</b> Data is surrounded by filler marker(s)</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>3)</b> Filler marker(s) can be duplicated or withdrawn to a minimum of 1 filler marker per marker-end (starting standard is 2 filler markers per marker end)</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>4)</b> Lists within data/metadata groupings should use the same marker-end marker to show divisions of data</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>5<sup><sub>a</sub></sup>)</b> <q><b><i>end</i></b></q> should always be used to show the end of string just before the closing marker</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>5<sup><sub>b</sub></sup>)</b> The closing marker should be one of the follow: <i>the starting marker</i>, <i>the number of data groupings</i>, <i>a completely unique marker</i></ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>6)</b> If an H-API string is within another H-API string as data or metadata, the starting and closing tag needs to be the same but completely different then all other starter & closing tags</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>7<sup><sub>a</sub></sup>)</b> If multiple H-API strings are nested together, they all need unique and seperate starter & closing tags</ul><ul class='info1' style='padding-top:1.5vw;padding-bottom:2vw;padding-right:2.5%;'><b style='font-size:109%'>7<sup><sub>b</sub></sup>)</b> If multiple H-API strings are nested together, only the outer-most string can have different starter & closer markers</ul>
+ </p>
+ <p></br><h1 style='font-size:3.5vw;align:center;text-align:center;position:center;'><b>Marker Set</b>, <b>Hash</b>!&nbsp;</h1>
+ </br>&nbsp; &nbsp; &nbsp; &nbsp; Once we have the data setup we can get the Base64 CRC hash of the data set. Immediately after the CRC is generated, wrap the CRC with identifiers so other importers can either be given heads-up information or know it's point of origin. The wrapping identifiers are a series of 2 serial IDs.</br>&nbsp; &nbsp; &nbsp; &nbsp; The first serial ID can only contain lowercase characters and special characters that are under the half-way line or within the limits of the lowercase "u" character. This does mean, no numbers are allowed in this serial ID even if they fit wihtin the limits of the lowercase "u" character. This serial ID can be any length but must contain at least 1 non-special character.</br>&nbsp; &nbsp; &nbsp; &nbsp; The second serial ID may not contain lowercase nor special characters. Only capitalized characters & numbers for this serial ID. Emojis are allowed in this serial ID, if capable of producing, for as long as they fit within the limits of the capitalized "U" character. This serial ID must contain at least 1 non-numerical & non-emoji character.</br>&nbsp; &nbsp; &nbsp; &nbsp; The combined minimum length of the two serial IDs is 2 characters (non-special, non-emoji, non-numerical), with the first being within the limits of the lowercase "u" and the second being within the limits of the uppercase "U" as well as their own seperate clauses. The two serial IDs may be random or unique and the exporter of the data is responsible for determining the best way to output their API (blinded or Not, Partially or Not).
+ </br>&nbsp; &nbsp; &nbsp; &nbsp; The CRC goes after the combined identifiers then the ending is the reverse of the combined indentifiers finally capped with an ending indentifier. The ending indentifier will be placed behind any "=" or "==" that the CRC ends with. So if the CRC ends with "56=" the reversed combined indentifier combined with the ending indentifier will be placed behind the "=" to end up with "56[reversed combined indentifier][ending indentifier]=". This gives the importer enough information to remove at least the front cap (the combined indentifier) to be able to read the CRC during importing. For most cases, the ending is not needed to be removed/adjusted to be read fully but the more data within the CRC, the more risk is taken by not correcting the ending cap when importing.</br><p class='info1' style='padding:1.5vw;text-align:center;'><b  onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="serial1 + SERIAL2 + CRC - (=|==) + serial1+serial2.reverse + [ending.indentifier] + (=|==)";' ontouchstart='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="[indentifiers] + CRC - (=|==) + [indentifiers.reverse] + [ending.indentifier] + (=|==)";' ontouchend='this.style="transition: 1s;transition-timing-function: ease-in-out;";this.innerText="serial1 + SERIAL2 + CRC - (=|==) + serial1+serial2.reverse + [ending.indentifier] + (=|==)";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="[indentifiers] + CRC - (=|==) + [indentifiers.reverse] + [ending.indentifier] + (=|==)";'>[indentifiers] + CRC - (=|==) + [indentifiers.reverse] + [ending.indentifier] + (=|==)</b></p>
+ </p>
+ <p></br><h1 style='font-size:3.5vw;align:center;text-align:center;position:center;'><b>Display</b>!</h1>
+ </br>&nbsp; &nbsp; &nbsp; &nbsp; Finally, the object has been setup, hashed & wrapped and is ready for displaying so the user can take the data. This design allows for many different ways to implement the system, irrardless of what language it's coded in or just inline via HTML. This is the API structure with the people in mind. Want to add privacy, use a blinded version or create your own blinded version. Want to add files, go ahead! Want to turn it into a hashlink and sell it, okay. How you use and make use of this API is up to you. With great power comes great responsibility.
+ </br></br>
+ <p class='bingo' title='   Example Hashed-API    ' onmouseover='this.style="transition: 1s;transition-timing-function: ease-in-out;font-size:20px;";this.innerText="&nbsp;|example,..1..,API,..test,test,test..,,..&#039;boom chak-a-laka Boom!&#039;..,end|&nbsp;";' onmouseout='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;x4PfGV4YW1wbGUsLi4xLi4sQVBJLC4udGVzdCx0ZXN0LHRlc3QuLiwsLi4nYm9vbSBjaGFrLWEtbGFrYSBCb29tIScuLixlbmR8P4xash&nbsp;";' ontouchstart='this.style="transition: 1s;transition-timing-function: ease-in-out;font-size:20px;";this.innerText="&nbsp;|example,..1..,API,..test,test,test..,,..&#039;boom chak-a-laka Boom!&#039;..,end|&nbsp;";' ontouchend='this.style="transition: 0.39s;transition-timing-function: ease-in-out;";this.innerText="&nbsp;x4PfGV4YW1wbGUsLi4xLi4sQVBJLC4udGVzdCx0ZXN0LHRlc3QuLiwsLi4nYm9vbSBjaGFrLWEtbGFrYSBCb29tIScuLixlbmR8P4xash&nbsp;";'>&nbsp;x4PfGV4YW1wbGUsLi4xLi4sQVBJLC4udGVzdCx0ZXN0LHRlc3QuLiwsLi4nYm9vbSBjaGFrLWEtbGFrYSBCb29tIScuLixlbmR8P4xash&nbsp;</p>
+ </p>
+ </br></br>
+  <footer style='position:relative;bottom:0;width:94%;align:center;text-align:center;'>
+ <span style="opacity:0.85;font-size:70%;bottom:0;color:rgb(0,0,0,0.8);text-shadow:0px 0.5px 3.69px rgb(255,255,255,0.78);cursor:pointer;" align="center" onclick='window.open("https://3dthe.ninja")' target='_blank' rel='noopener noreferrer' title='Visit 3Douglas Website'><p><b>&nbsp;&nbsp;Hosted on IPFS | Crafted by 3Douglas&nbsp;&nbsp;</b></br>Deoblou Corp. 2000-<span id="nyear"></span> ®</br>Hodlserv Inc 2017-<span id="nyear2"></span> ©</p></span>
+ </footer>
+ </div>
+ </body>
+ <script>
+initClock();
+ </script>
+ </html>
+ 
